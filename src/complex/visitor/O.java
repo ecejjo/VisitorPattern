@@ -23,5 +23,9 @@ public abstract class O {
 	public E2 getE2() {
 		return e2;
 	}
-
+	
+	@Override
+	public String toString() {
+        return "O object";
+    }
 }

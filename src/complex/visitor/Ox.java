@@ -8,6 +8,11 @@ public class Ox extends O {
 		b = 88;
 		e2 = new E21();
 	}
+	
+	@Override
+	public void accept(V v) {
+		v.visit(this);
+	}
 
 	public int getB() {
 		return b;
@@ -16,10 +21,9 @@ public class Ox extends O {
 	public E2 getE2() {
 		return e2;
 	}
-
+	
 	@Override
-	public void accept(V v) {
-		v.visit(this);
-	}
-
+	public String toString() {
+        return "Ox object";
+    }
 }
