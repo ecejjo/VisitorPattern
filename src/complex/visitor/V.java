@@ -1,17 +1,10 @@
 package complex.visitor;
 
-public class V {
+interface V {
 	
-	void visit(O o) {
-		o.accept(this);
-	}
+	void visit(O o);
 	
-	void visit(Ox ox) {
-		ox.accept(this);
-	}
+	void visit(Ox ox);
 
-	void visit(Oy oy) {
-		oy.accept(this);
-	}
-
+	void visit(Oy oy);
 }
